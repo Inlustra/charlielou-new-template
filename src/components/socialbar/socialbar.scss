@@ -1,0 +1,7 @@
+#social-bar {
+  @extend .container;
+  a {
+    float: right;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection'
+      xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'
+      xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <b:include data='blog' name='all-head-content'/>
+    <title>
+        <data:blog.pageTitle/>
+    </title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+    </style>
+    <b:skin><![CDATA[@@include(@distcss)]]></b:skin>
+</head>
+<body>
+@htmlinclude('components/layout/layout.html')
+<script type='text/javascript'>
+    /*<![CDATA[*/
+    @@include(@distjs)
+    /*]]>*/
+</script>
+</body>
+</html>

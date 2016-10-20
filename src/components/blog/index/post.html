@@ -1,0 +1,19 @@
+<div class="index-post">
+    <div class="card" expr:id='&quot;p&quot; + data:post.id' xmlns:data=" " xmlns:expr="http://www.w3.org/1999/xhtml"
+         xmlns:b="http://www.w3.org/1999/XSL/Transform">
+        <b:if cond='data:post.firstImageUrl'>
+            <div class="card-img-top" expr:style='&quot;background-image: url(&quot; + data:post.firstImageUrl + &quot;);&quot;'>
+            </div>
+        </b:if>
+        <div class="card-block">
+            <div class="card-title text-primary">
+                <strong>
+                    <a expr:href='data:post.url'><data:post.title/></a>
+                </strong>
+            </div>
+            <div class="card-text text-muted">
+                <data:post.snippet/>
+            </div>
+        </div>
+    </div>
+</div>

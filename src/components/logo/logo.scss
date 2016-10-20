@@ -1,0 +1,57 @@
+#logo {
+
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+  @import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+  svg {
+
+    $stroke-width: 3px;
+    $long-dasharray: 347;
+    $short-dasharray: 135;
+
+    .longLine {
+      stroke: $brand-secondary;
+      fill-opacity: 0;
+      stroke-width: $stroke-width;
+      stroke-dasharray: $long-dasharray;
+      stroke-dashoffset: 0;
+      animation: dash2 5s linear;
+    }
+
+    .shortLine {
+      stroke: $brand-secondary;
+      fill-opacity: 0;
+      stroke-width: $stroke-width;
+      stroke-dasharray: $short-dasharray;
+      stroke-dashoffset: 0;
+      animation: dash1 5s linear;
+    }
+
+    .textcharlie {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: bold;
+      letter-spacing: 8px;
+      font-size: 30px;
+      fill: $brand-secondary;
+    }
+
+    .text2 {
+      font-family: 'Alegreya', serif;
+      font-weight: bold;
+      letter-spacing: 10px;
+      font-size: 22px;
+      fill: $brand-secondary;
+    }
+
+    @keyframes dash2 {
+      to {
+        stroke-dashoffset: $long-dasharray * 2;
+      }
+    }
+    @keyframes dash1 {
+      to {
+        stroke-dashoffset: $short-dasharray * 2;
+      }
+    }
+  }
+}

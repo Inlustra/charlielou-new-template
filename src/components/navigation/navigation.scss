@@ -1,0 +1,38 @@
+$nav-background: $body-bg;
+
+#navigation {
+  nav {
+
+    .navbar-nav {
+      background-color: $nav-background;
+      display: inline-block;
+      padding: 0 30px;
+    }
+
+    &.navbar:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      height: 100%;
+      width: 100%;
+      border-top: solid 1px $color-dusty-rose;
+      z-index: -1;
+    }
+
+    &.navbar {
+      z-index: 2;
+      position: relative;
+      height: initial;
+      margin: initial;
+      display: block;
+      text-align: center;
+
+      .nav-item {
+        display: inline-block;
+        float: none;
+        font-size: 20px;
+      }
+    }
+
+  }
+}

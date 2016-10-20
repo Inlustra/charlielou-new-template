@@ -1,0 +1,7 @@
+@import 'variables.scss';
+@import '../bower_components/bootstrap/scss/bootstrap';
+@import 'components/**/*';
+
+html, body {
+  background-color: $body-bg;
+}

@@ -1,0 +1,23 @@
+.index-post {
+
+  .card-img-top {
+    height: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-block {
+    height: 155px;
+    overflow: hidden;
+
+    .card-title {
+      height: 40px;
+      overflow:hidden;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+  }
+}
