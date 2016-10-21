@@ -1,0 +1,17 @@
+$image-width: 25%;
+
+.instagram-feed-container {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .feed-image {
+    @extend .col-xs-2;
+    img {
+      width: 100%;
+    }
+  }
+
+}
+

@@ -18,6 +18,7 @@ const gutil = require('gulp-util');
 const DEBUG_ENABLED = argv.debug !== undefined;
 
 const libsJS = [
+    'libs/**/*.js',
     'bower_components/jquery/dist/jquery.min.js',
     'bower_components/tether/dist/js/tether.min.js',
     'bower_components/bootstrap/dist/js/bootstrap.min.js',
